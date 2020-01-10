@@ -1,0 +1,40 @@
+Add a version suffix in order to distinguish driver from the inbox one.
+Index: src/drivers/scsi/megaraid/megaraid_mbox.h
+===================================================================
+--- src.orig/drivers/scsi/megaraid/megaraid_mbox.h	2018-03-20 08:07:01.827101700 +0100
++++ src/drivers/scsi/megaraid/megaraid_mbox.h	2018-03-20 08:23:01.059649467 +0100
+@@ -21,7 +21,7 @@
+ #include "megaraid_ioctl.h"
+ 
+ 
+-#define MEGARAID_VERSION	"2.20.5.1"
++#define MEGARAID_VERSION	"2.20.5.1_dup7.5"
+ #define MEGARAID_EXT_VERSION	"(Release Date: Thu Nov 16 15:32:35 EST 2006)"
+ 
+ 
+Index: src/drivers/scsi/megaraid/megaraid_mm.h
+===================================================================
+--- src.orig/drivers/scsi/megaraid/megaraid_mm.h	2018-03-20 08:07:01.827101700 +0100
++++ src/drivers/scsi/megaraid/megaraid_mm.h	2018-03-20 08:23:52.464772150 +0100
+@@ -28,7 +28,7 @@
+ #include "megaraid_ioctl.h"
+ 
+ 
+-#define LSI_COMMON_MOD_VERSION	"2.20.2.7"
++#define LSI_COMMON_MOD_VERSION	"2.20.2.7_dup7.5"
+ #define LSI_COMMON_MOD_EXT_VERSION	\
+ 		"(Release Date: Sun Jul 16 00:01:03 EST 2006)"
+ 
+Index: src/drivers/scsi/megaraid/megaraid_sas.h
+===================================================================
+--- src.orig/drivers/scsi/megaraid/megaraid_sas.h	2018-03-20 08:07:01.827101700 +0100
++++ src/drivers/scsi/megaraid/megaraid_sas.h	2018-03-20 08:22:06.780410973 +0100
+@@ -35,7 +35,7 @@
+ /*
+  * MegaRAID SAS Driver meta data
+  */
+-#define MEGASAS_VERSION				"07.702.06.00-rh2"
++#define MEGASAS_VERSION				"07.702.06.00-rh2_dup7.5"
+ #define MEGASAS_RELDATE				"June 21, 2017"
+ 
+ /*
